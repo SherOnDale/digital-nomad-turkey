@@ -13,9 +13,29 @@
         </div>
       </div>
     </div>
-    <home-section :index="-1" :gradient="false" top="90vh"/>
-    <home-section :index="0" top="150vh" skew="5deg"/>
-    <home-section :index="1" top="200vh" skew="-5deg"/>
+    <home-section
+      :index="-1"
+      :gradient="false"
+      top="90vh"
+      :content="content[0]"
+      textAlignment="right"
+    />
+    <home-section
+      :index="0"
+      top="150vh"
+      skew="5deg"
+      skewOpp="-5deg"
+      :content="content[1]"
+      :order="0"
+    />
+    <home-section
+      :index="1"
+      top="200vh"
+      skew="-5deg"
+      skewOpp="5deg"
+      :content="content[2]"
+      textAlignment="right"
+    />
   </div>
 </template>
 
@@ -25,6 +45,30 @@ import HomeSection from "@/components/HomeSection";
 export default {
   components: {
     HomeSection
+  },
+  data() {
+    return {
+      content: [
+        {
+          title: "magna arcu feugiat",
+          subtitle:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a magnam impedit illo rerum ipsa modi quaerat laboriosam sapiente quidem aut et perferendis nisi dignissimos eum repudiandae, autem blanditiis vel.",
+          imageUrl: "/images/pic01.jpg"
+        },
+        {
+          title: "tempus adipiscing",
+          subtitle:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a magnam impedit illo rerum ipsa modi quaerat laboriosam sapiente quidem aut et perferendis nisi dignissimos eum repudiandae, autem blanditiis vel.",
+          imageUrl: "/images/pic02.jpg"
+        },
+        {
+          title: "nullam dignissim",
+          subtitle:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a magnam impedit illo rerum ipsa modi quaerat laboriosam sapiente quidem aut et perferendis nisi dignissimos eum repudiandae, autem blanditiis vel.",
+          imageUrl: "/images/pic03.jpg"
+        }
+      ]
+    };
   }
 };
 </script>
