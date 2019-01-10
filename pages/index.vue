@@ -13,17 +13,25 @@
         </div>
       </div>
     </div>
+    <home-section :index="-1" :gradient="false" top="90vh"/>
+    <home-section :index="0" top="150vh" skew="5deg"/>
+    <home-section :index="1" top="200vh" skew="-5deg"/>
   </div>
 </template>
 
 <script>
-export default {};
+import HomeSection from "@/components/HomeSection";
+
+export default {
+  components: {
+    HomeSection
+  }
+};
 </script>
 
 <style>
 .home__hero--container {
   height: 100vh;
-  width: 100vw;
   background: url(/images/banner-desktop.jpg) center no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 10% 100%, 0% 100%);
