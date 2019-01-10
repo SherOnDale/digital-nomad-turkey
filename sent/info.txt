@@ -1,0 +1,12 @@
+   // Fonts
+Source Sans Pro', Helvetica, sans-serif
+Courier New', monospace
+Raleway, Helvetica, sans-serif
+
+
+
+   // Palette
+#4c5c96
+#45558d
+#3f4e85
+#2e3141
