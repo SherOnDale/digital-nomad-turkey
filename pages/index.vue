@@ -89,7 +89,6 @@ export default {
   width: 100vw;
   height: 100vh;
   background: var(--primary-trans);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 10% 100%, 0% 100%);
 }
 
 .home__hero {

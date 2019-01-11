@@ -12,9 +12,11 @@
         <img :src="content.imageUrl" alt="image">
       </div>
       <div class="home__section--body" :style="{textAlign: textAlignment}">
-        <div class="home__section--title">{{content.title}}</div>
+        <div class="home__section--title">
+          <h2>{{content.title}}</h2>
+        </div>
         <div class="home__section--subtitle">{{content.subtitle}}</div>
-        <div class="home__section--action"></div>
+        <div class="home__section--action">learn more</div>
       </div>
     </div>
   </div>
@@ -82,5 +84,23 @@ export default {
 
 .home__section--avatar img {
   border-radius: 50%;
+}
+
+.home__section--body {
+  width: 50vw;
+}
+
+.home__section--title,
+.home__section--action {
+  text-transform: uppercase;
+}
+
+.home__section--title {
+  border-bottom: 1px solid var(--gray);
+}
+
+.home__section--title h2 {
+  letter-spacing: 0.2rem;
+  padding-bottom: 1.2rem;
 }
 </style>
