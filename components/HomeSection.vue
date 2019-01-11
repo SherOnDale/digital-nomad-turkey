@@ -16,7 +16,10 @@
           <h2>{{content.title}}</h2>
         </div>
         <div class="home__section--subtitle">{{content.subtitle}}</div>
-        <div class="home__section--action">learn more</div>
+        <div class="home__section--action">
+          <div class="home__section--action-icon">></div>
+          <div class="home__section--action-text">learn more</div>
+        </div>
       </div>
     </div>
   </div>
@@ -101,6 +104,27 @@ export default {
 
 .home__section--title h2 {
   letter-spacing: 0.2rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.3rem;
+}
+
+.home__section--subtitle {
+  padding-top: 1.3rem;
+  padding-bottom: 3rem;
+  line-height: 2rem;
+}
+
+.home__section--action-icon {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 1px solid var(--gray);
+}
+
+.home__section--action-text {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 </style>

@@ -1,5 +1,3 @@
-const pkg = require('./package');
-
 module.exports = {
   mode: 'universal',
 
@@ -11,7 +9,11 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'nullam ultrices. neque et faucibus viverba'
+      },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' }
